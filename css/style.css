@@ -1,0 +1,23 @@
+body{
+    background-image: url("../img/bg-paint.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.card{
+    margin-top:150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    height: 350px;
+    width: 750px;
+    font-size: 12px;
+    color: white;
+    background-color: #171717;
+}
+.dp{
+    position: absolute;
+    left: 1000px;
+    top: 180px;
+    height:250px;
+    width: 250px;
+}
