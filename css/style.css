@@ -1,7 +1,49 @@
 body{
-    background-image: url("../img/bg-paint.jpeg");
+    height: 100%;
+}
+#bg-about{
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/funk.jpg"); 
+
+
+    background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+    height: 50%;   
+    width: 1343px;
+    height: 819px;
+}
+#bg-work{
+
+    background-image:   url("../img/startup-photos.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
+}
+#bg-col-stud{
+    background-image:  linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url("../img/muscle.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100%;
+}
+.muscles{
+    margin: 30px;
+    height: 150px;
+}
+#bg-contact{
+background-color: #333;
+
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 50%;
 }
 .card{
     margin-top:150px;
@@ -10,14 +52,93 @@ body{
     padding-top: 60px;
     height: 350px;
     width: 750px;
-    font-size: 12px;
+    font-size: 13px;
+    color: white;
+    background-color: #171717;
+}
+
+#stud{
+    margin-top:150px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 60px;
+    height: 350px;
+    width: 750px;
+    font-size: 13px;
     color: white;
     background-color: #171717;
 }
 .dp{
     position: absolute;
-    left: 1000px;
-    top: 180px;
+    top: 200px;
+    left:900px;
     height:250px;
     width: 250px;
 }
+
+
+/*side nav*/
+#mySidenav a {
+    position: absolute;
+    right: -80px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+  }
+  
+  #mySidenav a:hover {
+    right: 0;
+  }
+  
+  #about {
+    top: 20px;
+    background-color: #4CAF50;
+  }
+  
+  #blog {
+    top: 80px;
+    background-color: #2196F3;
+  }
+  
+  #projects {
+    top: 140px;
+    background-color: #f44336;
+  }
+  
+  #contact {
+    top: 200px;
+    background-color: #555
+  }
+
+
+/*top nav*/
+  
+#navbar {
+    background-color: #333;
+    position: fixed;
+    top: -5px;
+    width: 100%;
+    display: block;
+    transition: top 0.3s;
+    
+   z-index: 99999;
+  }
+  
+  #navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  #navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }

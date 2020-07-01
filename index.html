@@ -1,47 +1,86 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>My Portfolio</title>
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-        <script src="js/bootstrap.min.js"></script>
-    </head>
-    <body>
-        <img class="dp" src="img/dp.png" alt="dp">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="card">
-                        <h1>Franz John Paul Samson</h1>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                        </p>
-                    </div>
-                </div>
+<head>
+    <meta charset="utf-8">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+<div id="navbar">
+        <a href="#">About</a>
+        <a href="#">Experience</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
+</div>
+<div class="container-fluid" id="bg-about">
+    <div class="row">
+        <div class="col-md-6">
+                <img class="dp" src="img/dp.png" alt="">
+            <div class="card">
+                <h1>Franz John Paul Samson</h1>
+                <p>Hi, I am a Web Developer from Manila. I'm a self-driven person wanting to achieve my goals and be successful some days goals are important to me because that is the path to success and every inch of effort is important to reach all of my goals no matter how slow it is or how big it is.
+                </p>
             </div>
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="card">
-                            <h1>Work Experience as a Jr Web Developer</h1>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="card">
-                                <h1>As a College Student</h1>
-                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
         </div>
-
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="#" id="about">About</a>
+        <a href="#" id="blog">Experience</a>
+        <a href="#" id="projects">Projects</a>
+        <a href="#" id="contact">Contact</a>
+    </div>
+</div>
+<div class="container-fluid"  id="bg-work">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <h1>Work Experience as a Jr Web Developer</h1>
+                <p>I have two role in the company <br><br>
+                1. As a system administrator i a sure that the partner software is running well and generate the reports gathered by the partner software using SQL as a database language to construct all the report needed by the company <br><br>
+                2. As a junior programmer we maintain, update and secured are own website we make sure that our software is up to date and user friendly for our clients and we also do the QA of the software to make sure everything is running well when we lunch our software.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="bg-col-stud">
+    <div class="row">
+            <div class="col-md-5">
+                <img class="muscles" src="img/muscle.png" alt="">
+                <img class="muscles" src="img/vains.png" alt="">
+                <img class="muscles" src="img/nervs.png" alt="">
+            </div>
+        <div class="col-md-6">
+            <div class="card" id="stud">
+                <h1>As a College Student</h1>
+                <p>I have a project Called HOMO SOMA its an mobile application software that intigrates AUGMENTED REALITY its an application for human anatomy that shows how our internal body works the target for this app is High School students who study's the Human anatomy it helps them to navigate and to see clearly where and what is inside of our body.
+                The application won a award as a MOST POPULAR CAPSTONE IN SOCIAL MEDIA and it ranks as a TOP 10 CAPSTONE OF THE YEAR
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid" id="bg-contact">
+    <div class="row">
+        <div class="col-md-6 ml-auto mr-auto">
+            <h1>Contact</h1>
+        </div>
+    </div>
+</div>
 <script src="js/jquery.js"></script>
 <script src="js/popper.js"></script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    document.getElementById("navbar").style.top = "0";
+    } else {
+    document.getElementById("navbar").style.top = "-50px";
+    }
+}
+</script>
     </body>
 </html>
