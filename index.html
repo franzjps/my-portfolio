@@ -7,36 +7,41 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
 <div id="navbar">
-        <a href="#">About</a>
-        <a href="#">Experience</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
+        <a href="#bg-about">About</a>
+        <a href="#bg-work">Experience</a>
+        <a href="#bg-col-stud">Projects</a>
+        <a href="#bg-contact">Contact</a>
 </div>
 <div class="container-fluid" id="bg-about">
     <div class="row">
         <div class="col-md-6">
                 <p class="box"></p>
-                <img class="dp" src="img/dp.png" alt="">
-            <div class="card">
+                <img class="dp" src="img/dp.png" alt=""  data-aos="fade-up">
+            <div class="card" data-aos="fade-right">
                 <h1>Franz John Paul Samson</h1>
-                <p>Hi, I am a Web Developer from Manila. I'm a self-driven person wanting to achieve my goals and be successful some days goals are important to me because that is the path to success and every inch of effort is important to reach all of my goals no matter how slow it is or how big it is.
+                <p>I strongly believe that nothing is impossible for a man that gives out his very best. 
+                I never back down on challenges until the job is finished or the goal is reached. 
+                I also believe that no one is to blame for my situation, instead, it is my responsibility to achieve the things that I want in life.
                 </p>
             </div>
         </div>
     </div>
 </div>
-<div class="container-fluid"  id="bg-work">
+<div class="container-fluid"  id="bg-work" data-aos="zoom-in">
     <div class="row">
         <div class="col-md-6">
-            <div class="card">
+            <div class="card" id="tasks">
                 <h1>Work Experience as a Jr Web Developer</h1>
-                <p>I have two role in the company <br><br>
-                1. As a system administrator i a sure that the partner software is running well and generate the reports gathered by the partner software using SQL as a database language to construct all the report needed by the company <br><br>
-                2. As a junior programmer we maintain, update and secured are own website we make sure that our software is up to date and user friendly for our clients and we also do the QA of the software to make sure everything is running well when we lunch our software.
+                1. Extract meaningful data using MySql Work Bench and Jaspersoft for generating company reports. This requires the advanced use of SQL for querying the needed data. <br><br>
+                2. Maintain and support the internal applications used by the company. This involves bug-fixing on both frontend and backend. I use JavaScript, HTML and CSS. <br><br>
+                2. Create designs for new and existing websites. This involves generating design for logos, web pages, and brochures. It also includes design for our Facebook posts. I use Photoshop.  <br><br>
+                4. I occasionally do system administration by managing our servers using AWS EC2 and AWS S3. <br><br>
                 </p>
             </div>
         </div>
@@ -45,12 +50,12 @@
 <div class="container-fluid" id="bg-col-stud">
     <div class="row">
             <div class="col-md-5">
-                <img class="muscles" src="img/muscle.png" alt="">
-                <img class="muscles" src="img/vains.png" alt="">
-                <img class="muscles" src="img/nervs.png" alt="">
+                <img class="muscles" src="img/muscle.png" alt="" data-aos="fade-down">
+                <img class="vains" src="img/vains.png" alt="" data-aos="fade-down">
+                <img class="nervs" src="img/nervs.png" alt="" data-aos="fade-down">
             </div>
         <div class="col-md-6">
-            <div class="card" id="stud">
+            <div class="card" id="stud" data-aos="zoom-in">
                 <h1>As a College Student</h1>
                 <p>I have a project Called HOMO SOMA its an mobile application software that intigrates AUGMENTED REALITY its an application for human anatomy that shows how our internal body works the target for this app is High School students who study's the Human anatomy it helps them to navigate and to see clearly where and what is inside of our body.
                 The application won a award as a MOST POPULAR CAPSTONE IN SOCIAL MEDIA and it ranks as a TOP 10 CAPSTONE OF THE YEAR
@@ -78,6 +83,9 @@
 <script src="js/jquery.js"></script>
 <script src="js/popper.js"></script>
 <script>
+AOS.init({
+  duration: 1800,
+})
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
