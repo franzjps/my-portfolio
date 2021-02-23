@@ -3,7 +3,7 @@ body{
 }
 #bg-about{
 
-    background-image: linear-gradient(rgba(2, 0, 133, 0.378), rgba(87, 0, 92, 0.707)),  url("../img/funk.jpg"); 
+    background-image:  url("../img/funk.jpg"); 
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -74,13 +74,25 @@ body{
     color: white;
     background-color: #171717;
 }
-#tasks{
-    margin-top:150px;
+#WebDev{
+    margin-top:100px;
     padding-left: 25px;
-    padding-right: 25px;
-    padding-top: 60px;
-    height: 400px;
-    width: 750px;
+    padding-right: 150px;
+    padding-top: 40px;
+    height: 450px;
+    width: 550px;
+    font-size: 13px;
+    color: white;
+    background-color: #171717;
+}
+#LocalIT{
+    margin-top:100px;
+    margin-left: 400px;
+    padding-left: 25px;
+    padding-right: 150px;
+    padding-top: 40px;
+    height: 680px;
+    width: 550px;
     font-size: 13px;
     color: white;
     background-color: #171717;
